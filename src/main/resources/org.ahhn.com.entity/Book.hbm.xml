@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="org.ahhn.com.entity">
+    <class name="Book" table="SH_BOOKS">
+        <id name="id" type="java.lang.Integer">
+            <column name="B_ID"/>
+            <generator class="native"/>
+        </id>
+        <property name="bookName" type="java.lang.String">
+            <column name="B_BOOKNAME"/>
+        </property>
+        <property name="isbn" type="java.lang.String">
+            <column name="B_ISBN"/>
+        </property>
+        <property name="price" type="java.lang.Integer">
+            <column name="B_PRICE"/>
+        </property>
+        <property name="stock" type="java.lang.Integer">
+            <column name="B_STOCK"/>
+        </property>
+    </class>
+</hibernate-mapping>
